@@ -6,6 +6,7 @@ require('./connection')
 
 const cookpediaServer = express()
 cookpediaServer.use(cors())
+cookpediaServer.use(express.json())
 cookpediaServer.use(router)
 
 PORT = 4000 || process.env.PORT 
