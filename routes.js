@@ -13,4 +13,8 @@ router.post('/add-testimonal', testimonialController.addTestimonialsController)
 //path to register
 router.post('/register-user', userController.registerController)
 
+
+//path to login
+router.post('/login-user', userController.loginController)
+
 module.exports = router
